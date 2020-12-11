@@ -19,18 +19,22 @@ public:
    // função que configura o nome do curso
    void setNomeCurso( string nome )
    {
+      // armazena o nome do curso no objeto
       cursoNome = nome;
    } // fim setNomeCurso
 
    // função para obter o nome do curso
    string getNomeCurso()
    {
+      // retorna o cursoNome do objeto
       return cursoNome;
    } // fim getNomeCurso
 
    // função para mostrar mensagem de boas vindas
    void displayMessage( string nomeCurso )
    {
+      // essa instrução chama getNomeCurso para obter o
+      // nome do curso que esse GradeBook representa
       cout<< "Bem vindo ao curso:\n" << getNomeCurso() <<endl;
    } // fim função
 
